@@ -9,3 +9,18 @@
 #Формат вывода:
 #Единственная строка, в которой записана фраза: Result: "..." , 
 #где вместо многоточия внутри кавычек записана зашифрованная последовательность.
+
+# ==== data ====
+alf = " abcdefghijklmnopqrstuvwxyz"
+
+s = int(input())
+n = input().strip()
+
+result=''
+
+# ==== main ====
+for i in n:
+    index = alf.index(i)
+    j = (index+s)%len(alf)
+    result=result+alf[j]
+print('Result: "'+ result +'"')
