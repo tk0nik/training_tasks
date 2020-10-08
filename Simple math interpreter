@@ -19,3 +19,4 @@ def calculate(x, y, operator):
     return('Error: incorrect operator')
 
 print(calculate(float(string[0]),  float(string[2]), string[1]))
+ 
