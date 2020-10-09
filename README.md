@@ -5,5 +5,6 @@
 #07.10.2020 - 08.10.2020 - I commit my old works
 
 
-#09.10.2020 - I start a new course, https://praktikum.yandex.ru/profile/backend-developer/
+#09.10.2020 - I start a new course
+
 #so I created a new branch 'Anphisa' for first part of lessons tasks
