@@ -1,29 +1,29 @@
-# ==== data ====
+# ==== data ==== #
 FRIENDS = ['Серёга', 'Соня', 'Дима', 'Алина', 'Егор']
 separator = ', '
 
-# ==== functions ====
+# ==== functions ==== #
 
-def print_friends_count(friends_count):
-    if friends_count == 1:
-        print('У тебя 1 друг')
-    elif 2 <= friends_count <= 4:
-        print('У тебя ' + str(friends_count) + ' друга')
-    elif friends_count >= 5:
-        print('У тебя ' + str(friends_count) + ' друзей')
+def show_count_friends(count_friends):
+    if count_friends == 1:
+        return('У тебя 1 друг')
+    elif 2 <= count_friends <= 4:
+        return('У тебя ' + str(count_friends) + ' друга')
+    elif count_friends >= 5:
+        return('У тебя ' + str(count_friends) + ' друзей')
 
 def process_query(query):
-    print("Привет, я Анфиса!")
     if query == 'Сколько у меня друзей?':
         count = len(FRIENDS)
-        print_friends_count(count)
+        return(show_count_friends(count))
     elif query == 'Кто все мои друзья?':
-        count = len(FRIENDS)
-        print('Твои друзья: '+separator.join(FRIENDS))
+        friends_string = separator.join(FRIENDS)
+        return('Твои друзья: ' + friends_string)
     else:
-        print('<неизвестный запрос>')
+        return('<неизвестный запрос>')
 
-# ==== main ====
-process_query('Сколько у меня друзей?')
-#process_query('Как меня зовут?')
-process_query('Кто все мои друзья?')
+
+# ==== main ==== #
+print(process_query('Сколько у меня друзей?'))
+print(process_query('Кто все мои друзья?'))
+print(process_query('Как меня зовут?'))
