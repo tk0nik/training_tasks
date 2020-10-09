@@ -1,21 +1,29 @@
- #part of cousre https://praktikum.yandex.ru/trainer/backend-developer
+# ==== data ====
+FRIENDS = ['Серёга', 'Соня', 'Дима', 'Алина', 'Егор']
+separator = ', '
 
-# ==== functions ====#
-def print_friends_count(friends_count, name=''):  # добавьте новый аргумент
+# ==== functions ====
+
+def print_friends_count(friends_count):
     if friends_count == 1:
-        text = '1 друг'
+        print('У тебя 1 друг')
     elif 2 <= friends_count <= 4:
-        text = str(friends_count) + ' друга'
+        print('У тебя ' + str(friends_count) + ' друга')
     elif friends_count >= 5:
-        text = str(friends_count) + ' друзей'
-        
-    if name!='':
-        print(name+', у тебя',text)
+        print('У тебя ' + str(friends_count) + ' друзей')
+
+def process_query(query):
+    print("Привет, я Анфиса!")
+    if query == 'Сколько у меня друзей?':
+        count = len(FRIENDS)
+        print_friends_count(count)
+    elif query == 'Кто все мои друзья?':
+        count = len(FRIENDS)
+        print('Твои друзья: '+separator.join(FRIENDS))
     else:
-        print('У тебя',text)
+        print('<неизвестный запрос>')
 
 # ==== main ====
-print_friends_count(3, 'Артём')
-print_friends_count(friends_count=7, name='Марина')
-print_friends_count(6)
-print_friends_count(4, name='Настя')
+process_query('Сколько у меня друзей?')
+#process_query('Как меня зовут?')
+process_query('Кто все мои друзья?')
