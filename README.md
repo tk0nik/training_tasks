@@ -8,3 +8,5 @@
 #09.10.2020 - I start a new course
 
 #so I created a new branch 'Anphisa' for first part of lessons tasks
+
+#10.10.2020 I push to 'Anphisa' a dict exapmle
