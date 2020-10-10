@@ -1,0 +1,26 @@
+# ==== task ===== #
+#В этой задаче вам дан словарь, в котором ключи — имена друзей, а значения — списки любимых песен каждого друга.
+#Напечатайте на экран:
+#Количество любимых песен Димы.
+#Все любимые песни Сони через запятую и пробел.
+
+# ==== data ==== #
+
+favorite_songs = {
+    'Серёга': ["Unforgiven", "Holiday", "Highway to hell"], 
+    'Соня': ["Shake it out", "Don't stop me now", "Наше лето"], 
+    'Дима': ["Владимирский централ", "Мурка", "Третье сентября"]
+}
+separator = ', '
+
+# ==== functions ==== #
+
+def favorite_songs_count(key):
+    return len(favorite_songs[key])
+
+def print_favorite_songs(key):   
+    print(separator.join(favorite_songs[key]))
+
+# ==== main ==== #
+print(favorite_songs_count('Дима'))
+print_favorite_songs('Соня')
