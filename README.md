@@ -22,4 +22,4 @@
 #I push to 'Anphisa' a new set&dict example 
 
 #I push to 'Anphisa' a new dict example, database query prototype (about_friends_query.py)
-
+#I pushed in 'Anphisa' branch 'checking_query_function' example
