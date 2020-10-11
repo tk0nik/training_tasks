@@ -14,3 +14,6 @@
 #by the way. I write it this not only for I coluld see the little gteen scuares in my profile, this is just second reason
 #this file is like a diary and a handbook at the same time. There is less then week I'm here, but I still remember where is what and which file I can look if I'll forget somthing
 #but I know that it's not forever, so this file can halp me once upon a future.
+
+#11.10.2020 I I push to 'Anphisa' a new dict example in .py format
+
