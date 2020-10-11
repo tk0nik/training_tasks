@@ -3,7 +3,7 @@
 def check_query(query):
     if query.split(): #проверка списка на пустоту
         if query.split() [0] == 'Анфиса' or query.split() [0] == 'Анфиса,':
-            return 'запрос к Анфисе'
+            return sep.join(tokens[1:]).strip()
         else:
             return 'запрос к кому-то ещё'  
     else:
