@@ -24,3 +24,5 @@
 #I push to 'Anphisa' a new dict example, database query prototype (about_friends_query.py)
 
 #I pushed in 'Anphisa' branch 'checking_query_function' example
+
+#I find the https://github.com/tk0nik/training_tasks/commits/main page and I no need this "diary" any more. Thank you, GitHub!:)
