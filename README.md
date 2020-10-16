@@ -28,4 +28,4 @@
 #I find the https://github.com/tk0nik/training_tasks/commits/main page and I no need this "diary" any more. Thank you, GitHub!:)
 
 just for green squares:
-12.10+ 15.10+
+12.10+ 15.10+ 16/10 (my first datetime query!)
