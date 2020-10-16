@@ -1,13 +1,40 @@
+import datetime as dt
+
+
 # ==== data ==== #
 
 DATABASE = {
     'Сергей': 'Омск',
     'Соня': 'Москва',
     'Миша': 'Москва',
+    'Алексей': 'Калининград',
     'Дима': 'Челябинск',
     'Алина': 'Красноярск',
     'Егор': 'Пермь',
-    'Коля': 'Красноярск'
+    'Коля': 'Красноярск',
+    'Артём': 'Владивосток',
+    'Петя': 'Михайловка'
+}
+
+UTC_OFFSET = {
+    'Москва': 3,
+    'Санкт-Петербург': 3,
+    'Новосибирск': 7,
+    'Екатеринбург': 5,
+    'Нижний Новгород': 3,
+    'Казань': 3,
+    'Челябинск': 5,
+    'Омск': 6,
+    'Самара': 4,
+    'Ростов-на-Дону': 3,
+    'Уфа': 5,
+    'Красноярск': 7,
+    'Воронеж': 3,
+    'Пермь': 5,
+    'Волгоград': 4,
+    'Краснодар': 3,
+    'Калининград': 2,
+    'Владивосток': 10
 }
 
 sep = ', '
@@ -29,7 +56,14 @@ def process_query(query):
         else:
             return process_friend(query.split(',')[0], ' '.join(query.split()[1:]).strip())
     else:
-        return 'запрос пуст или некорректен'     
+        return 'запрос пуст или некорректен'    
+    
+    
+def what_time(city):
+    offset = UTC_OFFSET[city]
+    city_time = dt.datetime.utcnow() + dt.timedelta(hours=offset)
+    f_time = city_time.strftime("%H:%M")
+    return f_time
 
 
 def process_anfisa(query):
@@ -51,6 +85,11 @@ def process_friend(name, query):
         if query: #если строка не пуста
             if query == 'ты где?':
                 return f'{name} в городе {DATABASE[name]}'
+            elif query == 'который час?':
+                if city in UTC_OFFSET:
+                    return f'Там сейчас {what_time(city)}'
+                else:
+                    return f'<не могу определить время в городе {city}>'
             else:
                 return '<неизвестный запрос>'
         return '<неизвестный запрос>'            
@@ -66,7 +105,11 @@ def runner():
         'Анфиса, кто виноват?',
         'Коля, ты где?',
         'Соня, что делать?',
-        'Антон, ты где?'
+        'Антон, ты где?',
+        'Алексей, который час?',
+        'Артём, который час?',
+        'Антон, который час?',
+        'Петя, который час?'
     ]
     for query in queries:
         print(query, '-', process_query(query))
