@@ -30,3 +30,4 @@
 just for green squares:
 12.10+ 15.10+ 16.10 (my first datetime query!)
 18.10 (my first requests query), my first http get
+23.10 my first steps in django here https://4a5dd2f8-6544-448a-a942-360a5380f1f1.serverhub.praktikum-services.ru/
