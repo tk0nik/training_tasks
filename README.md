@@ -33,4 +33,5 @@ just for green squares:
 23.10 my first steps in django here https://4a5dd2f8-6544-448a-a942-360a5380f1f1.serverhub.praktikum-services.ru/
 
 27.10 "500 Internal Server Error Server got itself in trouble" - I HATE YOU FUCKING PROGRAMMING I WANNA DIE нахуй
+27.10 8 hours later it works! look https://4b332fb0-282a-4c36-bf5c-ba5ee76ae182.serverhub.praktikum-services.ru/icecream/
 
