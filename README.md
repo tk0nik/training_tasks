@@ -35,3 +35,4 @@ just for green squares:
 27.10 "500 Internal Server Error Server got itself in trouble" - I HATE YOU FUCKING PROGRAMMING I WANNA DIE нахуй
 27.10 8 hours later it works! look https://4b332fb0-282a-4c36-bf5c-ba5ee76ae182.serverhub.praktikum-services.ru/icecream/
 
+19.01.2021 I love green squares and I don't believe someone's look here, so I'll add new pojects into main branch just because.
