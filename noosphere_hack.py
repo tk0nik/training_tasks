@@ -5,7 +5,7 @@ import requests
 #====data====#
 
 link_without_number = "https://acomics.ru/~the-noosphere-comics/"
-image_links = []
+catalog_path = "noosphere"
 
 #====functions====#
 
@@ -18,16 +18,16 @@ def get_image_link(number):
     full_image_link = "https://acomics.ru"+image_link
     return full_image_link
 
-for i in range(228, 229):
-    print("page number:", i)
-    print(get_image_link(str(i)))
+for i in range(1, 229):
+ 
+    #print(get_image_link(str(i)))
     p = requests.get(get_image_link(str(i)))
 
-    file_path = "noosphere\page_"+str(i)+".jpg"
+    file_path = catalog_path+"\page_"+str(i)+".jpg"
     out = open(file_path, "wb")
     out.write(p.content)
     out.close()
-    print("page is ready!")
+    print("page", i, "is in<"+ catalog_path+"> path")
 
 
    
