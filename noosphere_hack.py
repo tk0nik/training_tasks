@@ -29,15 +29,18 @@ def get_image_link(number):
     
     return full_image_link
 
+def get_file_path(number):
+    file_path = catalog_path+"\page_"+str(number)+".jpg"
+    return file_path
+
 #====main====#
 
 for i in range(1, get_count_of_pages() + 1):
  
     #print(get_image_link(str(i)))
     p = requests.get(get_image_link(str(i)))
-
-    file_path = catalog_path+"\page_"+str(i)+".jpg"
-    out = open(file_path, "wb")
+    
+    out = open(get_file_path(number), "wb")
     out.write(p.content)
     out.close()
     print("page", i, "is in<"+ catalog_path+"> path")
