@@ -36,3 +36,4 @@ just for green squares:
 27.10 8 hours later it works! look https://4b332fb0-282a-4c36-bf5c-ba5ee76ae182.serverhub.praktikum-services.ru/icecream/
 
 19.01.2021 I love green squares and I don't believe someone's look here, so I'll add new pojects into main branch just because.
+25.01.2021 I change my mind. I can't use my rep without any organisation. my newest commit is in 'pandas' branch. I started a new little project with data processing.
