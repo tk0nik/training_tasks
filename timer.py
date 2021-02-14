@@ -18,7 +18,7 @@ groups = {
           "Суббота":"14:30"},
     }
 
-
+#лучше вместо этого потом использовать dict keys
 weekdays = [
         "Понедельник",
         "Вторник",
@@ -29,10 +29,6 @@ weekdays = [
         "Воскресенье"
         ]
 
-#расписание
-#мб стоит потом сделать генератор под это дело
-#типа keys - дни недели, values - группы по этим дням
-#ну или хуй
 schedule = {
         "Понедельник": ["5", "4"],
         "Вторник": [],
@@ -49,7 +45,7 @@ def time_now():
 
 def weekday_now():
     #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    today = datetime.datetime(2021, 2, 13)
+    today = datetime.datetime(2021, 2, 14)
     return weekdays[today.weekday()]
 
 
@@ -66,11 +62,15 @@ def schedule_today():
 
 #==== main ====#
 groups_today = schedule_today()
+weekday = weekday_now()
 
 if groups_today != []:
     print(groups_today)
     
 print(time_now())
+
+for i in groups_today:
+    print(groups[i][weekday])
 
 
 
