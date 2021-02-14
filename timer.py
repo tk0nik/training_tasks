@@ -43,9 +43,10 @@ def time_now():
     time = datetime.datetime.now().strftime("%H:%M")
     return time
 
+#убрать потом это из функций (будет юзаться только при включении)
 def weekday_now():
     #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    today = datetime.datetime(2021, 2, 14)
+    today = datetime.datetime(2021, 2, 13)
     return weekdays[today.weekday()]
 
 
@@ -70,9 +71,6 @@ if groups_today != []:
 print(time_now())
 
 for i in groups_today:
-    print(groups[i][weekday])
-
-
-
-
+    group = groups[i]
+    print(group[weekday])
 
