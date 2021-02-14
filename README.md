@@ -37,3 +37,4 @@ just for green squares:
 
 19.01.2021 I love green squares and I don't believe someone's look here, so I'll add new pojects into main branch just because.
 25.01.2021 I change my mind. I can't use my rep without any organisation. my newest commit is in 'pandas' branch. I started a new little project with data processing.
+14.02.2021 console branch
