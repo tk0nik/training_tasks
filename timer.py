@@ -46,7 +46,7 @@ def time_now():
 #убрать потом это из функций (будет юзаться только при включении)
 def weekday_now():
     #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    today = datetime.datetime(2021, 2, 13)
+    today = datetime.datetime.today()
     return weekdays[today.weekday()]
 
 
