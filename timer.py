@@ -1,6 +1,6 @@
 import datetime
 import time
-from tkinter import *
+
 
 #время начала занятий
 
