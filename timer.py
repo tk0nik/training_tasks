@@ -4,7 +4,7 @@ import time
 import datetime
 
 #link for add to server: https://discord.com/api/oauth2/authorize?client_id=811552622951137290&permissions=1140980816&scope=bot
-token = 'ODExNTUyNjIyOTUxMTM3Mjkw.YCz3Rw.qICg8ZRt8I6Dzlt1R33Q2Tp8b6Y'
+token = '###'
 
 #===============DATA================#
 groups = {
